@@ -1,0 +1,207 @@
+.projectContainer{
+    // width: 100vw;
+    // height: 110vh;
+    // max-height: 500px;
+
+.phone{
+    display: none;
+}
+    .projects{
+        // width: 100%;
+        // height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .wrapper{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 700px;
+        text-align: center;
+        font-size: 5rem;
+        color: #D3D3D3;
+        // font-size: 4rem;
+        font-weight: 600;
+        letter-spacing: 10px;
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+
+    @import url("https://fonts.googleapis.com/css2?family=Russo+One&display=swap");
+
+    svg {
+        font-family: "Russo One", sans-serif;
+        width: 100%; height: 100%;
+    }
+    svg text {
+        animation: stroke 7s infinite alternate;
+        stroke-width: 1;
+        stroke: #ffffff;
+        font-size: 100px;
+    }
+    @keyframes stroke {
+        0%   {
+            fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255);
+            stroke-dashoffset: 25%; stroke-dasharray: 0 50%; stroke-width: 2;
+        }
+        70%  {fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255); }
+        80%  {fill: rgba(72,138,204,0); stroke: rgb(255, 255, 255); stroke-width: 3; }
+        100% {
+            fill: rgb(255, 255, 255); stroke: rgba(255, 255, 255, 0);
+            stroke-dashoffset: -25%; stroke-dasharray: 50% 0; stroke-width: 0;
+        }
+    }
+    
+    .wrapper {background-color: #ffffff00};
+    
+
+
+
+
+
+
+
+    .projectItem{
+        width: 100%;
+        height: 100%;
+        display: flex;
+         justify-content: center;
+         align-items: center;
+         gap: 20px;
+         flex-direction: column;
+
+
+         .item{
+             width: 80%;
+             color: wheat;
+             height: 450px;
+            //  border: 1px solid white;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             gap: 20px;
+           
+
+            .project_img{
+                width: 40%;
+                height: 100%;
+                // border: 1px solid white;
+                border-radius: 20% 0 20% 0;
+                background-color: rgba(128, 128, 128, 0.119);
+                
+                img{
+                    padding: 40px;
+                    // width: 80%;
+                    // height: auto;
+                }
+            }
+            
+            .project_info{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                width: 60%;
+                margin-left: 20px;
+                // border: 1px solid white;
+                height: 80%;
+
+                p{
+                    font-size: 1.3rem;
+                    color: rgba(128, 128, 128, 0.694);
+                    text-align: left;
+                    margin-bottom: 20px;
+                }
+
+                a{
+                    background-color: transparent;
+                    border: none;
+                    outline: none;
+                    color: #D3D3D3;
+                    border: 1px solid gray;
+                    font-size: 14px;
+                    padding: 10px 20px;
+                    cursor: pointer;
+                }
+                
+            }
+         }
+    }
+
+    .hrLine{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      
+        hr{
+            width: 80%;
+            margin-top: 100px;
+        }
+    }
+}
+
+
+@media (max-width: 1023px) {
+    
+
+    .projectContainer .projectItem .item .project_img {
+        
+        height: 55%;
+        
+    }
+}
+@media (max-width: 430px) {
+    .phone{
+        display: block;
+        // margin-top: 50px;
+    }
+
+    .projectContainer svg text {
+        animation: stroke 7s infinite alternate;
+        stroke-width: 1;
+        stroke: #ffffff;
+        font-size: 60px;
+    }
+
+    .projectContainer .projectItem .item {
+        width: 100%;
+       
+        height: 700px;
+        flex-direction: column;
+    }
+
+
+    .projectContainer .projectItem .item .project_img {
+        width: 50%;
+        
+    }
+
+
+    .projectContainer .projectItem .item .project_info {
+        
+        text-align: center;
+        width: 90%;
+        height: 100%;
+    }
+
+    .projectContainer .projectItem .item .project_img {
+        width: 60%;
+    }
+
+    .projectContainer .projectItem .item .project_info {
+       
+         margin-left: 0; 
+        align-items: center;
+    }
+
+    .projectContainer .projectItem .item .project_info p {
+       
+        text-align: center;
+         ;
+    }
+}
+
+

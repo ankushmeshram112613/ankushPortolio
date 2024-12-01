@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  // margin-left: 40px;
+  // margin-right: 40px;
+  box-sizing: border-box;
+  // 
+  font-family: myFirstFont;
+  font-family:sans-serif;
+}
+
+ 
+
+body {
+  background-color: #000000;
+  color: lightgray;
+  overflow-x: hidden;
+  // font-family: ;
+
+}
+
+
+/* // this code is for the scroll smooth behavior  */
+html {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+
+}
+ 
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+.course {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .box {
+    height: 200px;
+    width: 200px;
+    background-color: white;
+  }
+
+  // .style{
+  //   overflow-x: hidden;
+  // }
+
+
+  
+  
+}

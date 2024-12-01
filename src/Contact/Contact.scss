@@ -1,0 +1,176 @@
+.contactContainer {
+    width: 100vw;
+    height: 100vh;
+    // border: 1px solid wheat; 
+
+
+    .contact {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        .contactSection_1 {
+            display: flex;
+            flex-direction: column;
+            justify-content: start;
+            // align-items: center;
+            // width: 25%;
+
+            color: #D3D3D3;
+            font-size: 5rem;
+            font-weight: 600;
+            // margin-left: 120px;
+        }
+
+ 
+
+
+
+        .contactSection_2 {
+            width: 60%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-left: 50px;
+            // align-items: center;
+            text-align: center;
+            // gap: 20px;
+
+            .contactItem {
+                font-size: 35px;
+                font-weight: 500;
+                display: flex;
+                // flex-direction:column ;
+                align-items: center;
+                // justify-content: center;
+
+                input {
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    width: 20rem;
+                    height: 30px;
+                    // padding-bottom: 15px;
+                    background-color: rgba(211, 211, 211, 0.029);
+                    border-bottom: 1px solid gray;
+                    margin: 0 30px;
+                    font-size: 22px;
+
+                }
+
+                input::placeholder {
+                    font-size: 14px;
+                    font-weight: 200;
+                }
+
+                #email {
+                    margin-left: 0px;
+                    width: 30rem;
+                }
+            }
+            
+
+            .contactBtn{
+                display: flex;
+                margin-top: 20px;
+                align-items: center;
+                font-size: 12px;
+                color: gray;
+
+                button{
+                    background: transparent;
+                    border: none;
+                    outline: none;
+                    // color: #D3D3D3;
+                    border: 1px solid gray;
+                    font-size: 14px;
+                    // font-weight: 600;
+                    cursor: pointer;
+                    padding: 5px 15px;
+                    border-radius: 1px;
+                    transition: background-color 0.3s ease;
+                }
+
+                button:hover{
+                    background-color: rgba(128, 128, 128, 0.196);
+                    // color: white;
+                }
+
+                hr{
+                    width: 20px;
+                    height: 1px;
+                    margin-right: 10px;
+
+
+                }
+            }
+
+        }
+    }
+
+    .someinfo{
+        width: 50%;
+        height: 10%;
+        display: flex;
+        justify-content:  center;
+        align-items: center;
+        font-size: 14px;
+        color: #d3d3d328;
+        // margin-top: 20px;
+    }
+}
+
+
+@media (max-width: 1023px) {
+    
+    .contactContainer .contact .contactSection_2 {
+        width: 75%;
+        display: flex;
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+@media (max-width: 430px) {
+    
+    .contactContainer .contact .contactSection_1 {
+        
+        text-align: center;
+       
+        font-size: 4rem;
+        
+    }
+
+    .contactContainer .contact .contactSection_2 {
+        width: 60%;
+        display: flex
+    ;
+        flex-direction: column;
+        gap: 10px;
+        /* margin-left: 50px; */
+    }
+    .contactContainer .contact .contactSection_2 {
+        width: 100%;
+        display: flex
+;
+        margin-top: 40px;
+        flex-direction: column;
+        gap: 10px;
+        margin-left: 0;
+        padding: 10px;
+        margin-top: 0px;
+        height: 100%;
+    }
+
+    
+
+   
+
+}
+
+
+
+
