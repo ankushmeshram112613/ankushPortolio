@@ -83,11 +83,7 @@
     .footerContainer .footer .links .icons {
         width: 40%;
         height: 100%;
-        display: flex
-    ;
-        justify-content: center;
-        align-items: center;
-        gap: 10px;
+       flex-direction: column;
     }
     
     }
